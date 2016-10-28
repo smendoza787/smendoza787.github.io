@@ -119,6 +119,6 @@ input {
   background-color: #A9C52F;
 }
 
-input[name=message] {
-   line-height: 18px;
- }
+.project-block > h4 {
+  color: white;
+}
