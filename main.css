@@ -1,0 +1,124 @@
+* {
+  font-family: 'Nunito', sans-serif;
+}
+
+a {
+  color: white;
+}
+
+a:hover {
+  color: white;
+}
+
+a:visited {
+  color: black;
+}
+
+.intro-box {
+  background-color: #228896;
+  margin-top: -45px;
+  padding: 50px;
+  width: 100%;
+}
+
+.profile-pic {
+  width: 100%;
+  border-radius: 50%;
+  box-shadow: 2px 2px 5px black;
+}
+
+.portfolio-box {
+  background-color: #283739;
+  margin-top: -20px;
+  padding: 20px;
+}
+
+.projects {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.project-thumb {
+  border-radius: 10%;
+  margin: 25px;
+}
+
+.contact-box {
+  background-color: #228896;
+  padding: 25px;
+}
+
+.contact-box h2 {
+  margin-top: 0px;
+}
+
+.social-box a {
+  margin: 15px;
+}
+
+footer p {
+  margin: 10px;
+}
+
+.caption {
+  margin-top: -10px;
+}
+
+.shadow {
+  color: white;
+  text-shadow: 2px 2px 4px black;
+}
+
+.project-block img {
+  box-shadow: 3px 3px 5px black;
+  max-width: 300px;
+}
+
+.project-block>a>img {
+  width: 200px;
+}
+
+.container-fluid {
+  max-width; 800px:
+}
+
+/* .back-to-top {
+  display: inline;
+} */
+
+.columns {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.column-left {
+  width: 300px;
+}
+
+.column-right {
+  width: 400px;
+}
+
+.contact-stuff {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+}
+
+.button {
+  background-color: #A9C52F;
+}
+
+input[name=message] {
+   line-height: 18px;
+ }
