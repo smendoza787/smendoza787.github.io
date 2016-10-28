@@ -63,6 +63,7 @@ footer p {
 
 .caption {
   margin-top: -10px;
+  color: white;
 }
 
 .shadow {
@@ -117,8 +118,4 @@ input {
 
 .button {
   background-color: #A9C52F;
-}
-
-.project-block > h4 {
-  color: white;
 }
