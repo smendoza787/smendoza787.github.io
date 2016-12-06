@@ -12,7 +12,7 @@
   <link rel="stylesheet" href="main.css">
 </head>
 <body>
-  <nav class="navbar navbar-default navbar-static-top" role="navigation">
+  <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
     <div class='container'>
       <div class="navbar-header">
         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-nav-collapse">
@@ -25,10 +25,10 @@
       </div>
       <div class="collapse navbar-collapse" id="main-nav-collapse">
         <ul class="nav navbar-nav navbar-right">
-          <li><a href="#about">About</a></li>
-          <li><a href="#skills">Skills</a></li>
-          <li><a href="#portfolio">Projects</a></li>
-          <li><a href="http://slmendoza.wordpress.com/" target="_blank">Blog</a></li>
+          <li><a href="#about"><i class="fa fa-user" aria-hidden="true"></i> About</a></li>
+          <li><a href="#skills"><i class="fa fa-code" aria-hidden="true"></i> Skills</a></li>
+          <li><a href="#portfolio"><i class="fa fa-heartbeat" aria-hidden="true"></i> Projects</a></li>
+          <li><a href="http://smendoza.me/blog" target="_blank"><i class="fa fa-wordpress" aria-hidden="true"></i> Blog</a></li>
         </ul>
       </div><!-- /.navbar-collapse -->
     </div>
@@ -47,72 +47,52 @@
           <a href="http://codepen.io/smendoza787/" target="_blank"><i class="fa fa-codepen fa-2x" aria-hidden="true"></i></a>
           <a href="http://github.com/smendoza787" target="_blank"><i class="fa fa-github fa-2x" aria-hidden="true"></i></a>
         </div>
-        <p> I'm an aspiring web developer currently living in Las Vegas, NV. I'm teaching myself to code so I can develop websites and applications that help people all over the planet. If you'd like to follow my progress <a href="http://slmendoza.wordpress.com/" target="_blank">check out my blog</a> or:</p><form action="mailto:sergio@smendoza.me" method="post" enctype="text/plain">
-          <button class="black">Send me a message! <i class="fa fa-paper-plane" aria-hidden="true"></i></button>
+        <p class="intro"> I'm a bartender-turned-aspiring web developer currently living in 
+          Las Vegas, NV. I'm teaching myself to code so I can develop websites
+          and applications that help people all over the planet. If you'd like
+          to follow my progress <a href="http://slmendoza.wordpress.com/" target="_blank">
+          check out my blog</a> or:</p><form action="mailto:sergio@smendoza.me" method="post" enctype="text/plain">
+          <button class="message-button">Send me a message! <i class="fa fa-paper-plane" aria-hidden="true"></i></button>
         </form>
-      </div>
-    </div>
-  </div>
-  <div class="skills-box text-center" id="skills">
-    <h2 class="shadow">Skills</h2>
-    <div class="skills">
-      <div class="skills-html">
-        <div class="progress">
-          <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 65%">
-            <span class="sr-only">40% Complete (success)</span>
-            HTML
-          </div>
-        </div>
-      </div>
-      <div class="skills-css">
-        <div class="progress">
-          <div class="progress-bar progress-bar" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 65%">
-            <span class="sr-only">40% Complete (success)</span>
-            CSS
-          </div>
-        </div>
-      </div>
-      <div class="skills-javascript">
-        <div class="progress">
-          <div class="progress-bar progress-bar-warning progress-bar" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%">
-            <span class="sr-only">40% Complete (success)</span>
-            JavaScript
-          </div>
-        </div>
-      </div>
-      <div class="skills-ruby">
-        <div class="progress">
-          <div class="progress-bar progress-bar-danger progress-bar" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 30%">
-            <span class="sr-only">40% Complete (success)</span>
-            Ruby
-          </div>
-        </div>
       </div>
     </div>
   </div>
   <div class="portfolio-box text-center" id="portfolio">
     <h2 class="shadow">Projects</h2>
-  <!----------- PROJECTS ----------------->
+
+
+  <!--- PROJECTS ------------------------------------------------------------->
     <div class="projects">
       <div class="project-block animated slideInLeft">
         <a href="https://smendoza.github.io/twitchviewer" target="_blank"><img src="images/twitch.png" alt="Twitch App on CodePen" class="project-thumb">
         <h4 class="caption">Twitch Stream Viewer</h4></a>
+        <a href="https://smendoza.github.io/twitchviewer" class="project-link"><i class="fa fa-link" aria-hidden="true"></i> Link</a>
+        <a href="https://github.com/smendoza787/twitchviewer" class="project-link"><i class="fa fa-github" aria-hidden="true"></i> Github</a>
+        <p class="project-description">This is an app that uses the <a href="http://dev.twitch.tv">Twitch.TV API</a></p>
       </div>
       <div class="project-block animated slideInLeft">
         <a href="https://smendoza.github.io/wikipedia-viewer" target="_blank"><img src="images/wikipedia.png" alt="Wikipedia Viewer on CodePen" class="project-thumb">
         <h4 class="caption">Wikipedia Viewer</h4></a>
+        <a href="https://smendoza.github.io/wikipedia-viewer" class="project-link"><i class="fa fa-link" aria-hidden="true"></i> Link</a>
+        <a href="https://github.com/smendoza787/wikipedia-viewer" class="project-link"><i class="fa fa-github" aria-hidden="true"></i> Github</a>
       </div>
       <div class="project-block animated slideInLeft">
         <a href="https://codepen.io/smendoza787/full/pExYzd/" target="_blank"><img src="images/quotemachine.png" alt="Random Quote Machine on CodePen" class="project-thumb">
         <h4 class="caption">Random Quote Machine</h4></a>
+        <a href="https://codepen.io/smendoza787/full/pExYzd/" class="project-link"><i class="fa fa-link" aria-hidden="true"></i> Link</a>
+        <!-- <a href="#" class="project-link"><i class="fa fa-github" aria-hidden="true"></i> Github</a> -->
       </div>
       <div class="project-block animated slideInRight">
         <a href="https://protected-waters-66334.herokuapp.com/"><img src="images/pinteresting.png" alt="Pinteresting App on Heroku" class="project-thumb">
         <h4 class="caption">Pinteresting App</h4></a>
+        <a href="https://protected-waters-66334.herokuapp.com/" class="project-link"><i class="fa fa-link" aria-hidden="true"></i> Link</a>
+        <!-- <a href="#" class="project-link"><i class="fa fa-github" aria-hidden="true"></i> Github</a> -->
       </div>
       <div class="project-block animated slideInRight">
-        <a href="https://smendoza.github.io/weather-app" target="_blank"><img src="images/weather.png" alt="Local weather app on CodePen" class="project-thumb">
+        <a href="weather-app/index.html" target="_blank"><img src="images/weather.png" alt="Local weather app on CodePen" class="project-thumb">
         <h4 class="caption">Local Weather App</h4></a>
+        <a href="weather-app/index.html" class="project-link"><i class="fa fa-link" aria-hidden="true"></i> Link</a>
+        <a href="https://github.com/smendoza787/weather-app" class="project-link"><i class="fa fa-github" aria-hidden="true"></i> Github</a>
       </div>
     </div>
   </div>
