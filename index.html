@@ -7,7 +7,7 @@
   <title>Sergio Mendoza | Web Developer</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cabin+Sketch|Ubuntu:400,500">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cabin+Sketch|Raleway:200,400,500,700">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.1.0/css/hover-min.css">
   <link rel="stylesheet" href="main.css">
@@ -22,14 +22,16 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a href="/" class="navbar-brand">Sergio Mendoza | Web Developer</a>
+        <a href="/" class="navbar-brand desktop-brand hvr-push">Sergio Mendoza | Web Developer</a>
+        <a href="/" class="navbar-brand mobile-brand">SM | Web Developer</a>
       </div>
       <div class="collapse navbar-collapse" id="main-nav-collapse">
         <ul class="nav navbar-nav navbar-right">
-          <li><a href="#about" class="hvr-pop"><i class="fa fa-user" aria-hidden="true"></i> About</a></li>
+          <li><a href="#about" class=""><i class="fa fa-user" aria-hidden="true"></i> About</a></li>
           <!-- <li><a href="#skills"><i class="fa fa-code" aria-hidden="true"></i> Skills</a></li> -->
-          <li><a href="#projects" class="hvr-pop"><i class="fa fa-heartbeat" aria-hidden="true"></i> Projects</a></li>
-          <li><a href="http://smendoza.me/blog" target="_blank" class="hvr-pop"><i class="fa fa-wordpress" aria-hidden="true"></i> Blog</a></li>
+          <li><a href="#projects" class=""><i class="fa fa-heartbeat" aria-hidden="true"></i> Projects</a></li>
+          <li><a href="http://smendoza.me/blog" target="_blank" class=""><i class="fa fa-wordpress" aria-hidden="true"></i> Blog</a></li>
+          <li><a href="mailto:sergio@smendoza.me" target="_blank" class=""><i class="fa fa-paper-plane"></i> Contact</a></li>
         </ul>
       </div><!-- /.navbar-collapse -->
     </div>
@@ -43,9 +45,9 @@
       <div class="column-right animated fadeIn text-center">
         <h1 class="lg-tagline">Hi, I'm <span class="shadow logo">Sergio</span></h1>
         <div class="contact-stuff">
-          <a href="http://linkedin.com/in/slmendoza" target="_blank"><i class="fa fa-linkedin-square fa-3x" aria-hidden="true"></i></a>
-          <a href="https://twitter.com/swergi0" target="_blank"><i class="fa fa-twitter fa-3x" aria-hidden="true"></i></a>
-          <a href="http://github.com/smendoza787" target="_blank"><i class="fa fa-github fa-3x" aria-hidden="true"></i></a>
+          <a href="http://linkedin.com/in/slmendoza" target="_blank"><i class="fa fa-linkedin-square fa-3x " aria-hidden="true"></i></a>
+          <a href="https://twitter.com/swergi0" target="_blank"><i class="fa fa-twitter fa-3x " aria-hidden="true"></i></a>
+          <a href="http://github.com/smendoza787" target="_blank"><i class="fa fa-github fa-3x " aria-hidden="true"></i></a>
         </div>
         <p class="intro text-justify"> I'm currently living in Las Vegas, NV and
           I'm teaching myself how to build functional web applications that can
@@ -55,12 +57,7 @@
           I'm looking for a position as a Junior Developer at a company that I
           can learn and grow with. If you'd like to keep up with  my progress
           <a href="http://slmendoza.wordpress.com/" target="_blank" class="green-link"> check
-          out my blog</a> or:</p>
-          <form action="mailto:sergio@smendoza.me" method="post" enctype="text/plain">
-          <button class="message-button hvr-bounce-in">
-            Send me a message! <i class="fa fa-paper-plane" aria-hidden="true"></i>
-          </button>
-        </form>
+          out my blog</a>!</p>
       </div>
     </div>
   </div>
@@ -88,19 +85,31 @@
           JSON from the <a href="https://www.mediawiki.org/wiki/API:Main_page">Wikipedia API</a> to search through whatever the user inputs
           into the search field and displays articles along with descriptions
           matching the search. Used CSS transitions and CSS transform for the result
-          animation</p>
+          animation
+        </p>
       </div>
       <div class="project-block animated slideInLeft">
         <a href="https://codepen.io/smendoza787/full/pExYzd/" target="_blank" class="hvr-bounce-in"><img src="images/quotemachine.png" alt="Random Quote Machine on CodePen" class="project-thumb">
         <h4 class="caption">Random Quote Machine</h4></a>
         <a href="https://codepen.io/smendoza787/full/pExYzd/" target="_blank" class="project-link"><i class="fa fa-link" aria-hidden="true"></i> Link</a>
         <!-- <a href="#" class="project-link"><i class="fa fa-github" aria-hidden="true"></i> Github</a> -->
+        <p class="project-description">
+          The random quote was my first attempt at working with APIs. It's an app that generates
+          a random quote on design, by making an AJAX request to <a href="https://quotesondesign.com/api-v4-0/" target="_blank">Quotes on Design API</a>. I learned a lot about
+          positioning elements with relative positioning, AJAX, jQuery, and learning about sticking to a project even when you're really confused and don't know how to even.
+        </p>
       </div>
       <div class="project-block animated slideInRight">
         <a href="https://protected-waters-66334.herokuapp.com/" target="_blank" class="hvr-bounce-in"><img src="images/pinteresting.png" alt="Pinteresting App on Heroku" class="project-thumb">
         <h4 class="caption">Pinteresting App</h4></a>
         <a href="https://protected-waters-66334.herokuapp.com/" target="_blank" class="project-link"><i class="fa fa-link" aria-hidden="true"></i> Link</a>
-        <!-- <a href="#" class="project-link"><i class="fa fa-github" aria-hidden="true"></i> Github</a> -->
+        <a href="https://github.com/smendoza787/pinteresting2" target="_blank" class="project-link"><i class="fa fa-github" aria-hidden="true"></i> Github</a>
+        <p class="project-description">
+          I built this app while going through <a href="http://onemonth.com/">One Month Rails</a>.
+          I did this very early on in my learning career but I got to see how the Rails MVC works,
+          how to migrate a database in Rails, how to set up a user authentication sytem, how to deploy to <a href="http://heroku.com/">Heroku</a>, and
+          how to use an image upload form!
+        </p>
       </div>
       <div class="project-block animated slideInRight">
         <a href="weather-app/index.html" target="_blank" class="hvr-bounce-in"><img src="images/weather.png" alt="Local weather app on CodePen" class="project-thumb">

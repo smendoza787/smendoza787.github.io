@@ -1,5 +1,7 @@
 * {
-  font-family: 'Ubuntu', sans-serif;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 300;
+  box-sizing: border-box;
 }
 
 body {
@@ -17,13 +19,20 @@ h2 {
   margin-bottom: 30px;
 }
 
+.mobile-brand {
+  display: none;
+}
+
+h4 {
+  margin-bottom: 20px;
+}
+
 a {
   color: white;
 }
 
 a:hover,
 i:hover {
-  color: #d0d0d0;
   text-decoration: none;
   cursor: pointer;
 }
@@ -65,7 +74,7 @@ i:hover {
 .profile-pic {
   width: 100%;
   border-radius: 50%;
-  box-shadow: 2px 2px 5px black;
+  box-shadow: 1px 1px 3px black;
 }
 
 
@@ -82,8 +91,8 @@ i:hover {
 }
 
 .project-thumb {
-  border-radius: 5px;
-  width: 400px;
+  border-radius: 10px;
+  width: 300px;;
 }
 
 footer p {
@@ -93,7 +102,7 @@ footer p {
 .caption {
   color: white;
   font-size: 2em;
-  margin: 20px;
+  margin-top: 20px;
 }
 
 .shadow {
@@ -101,13 +110,17 @@ footer p {
   text-shadow: 1px 1px 3px black;
 }
 
+.project-block {
+  width: 400px;
+}
+
 .project-block,
 .intro {
-  background-color: rgba(255, 255, 255, 0.1);
+  background-color: rgba(0,0,0, 0.1);
   padding: 30px;
   margin: 15px;
   border-radius: 10px;
-  box-shadow: 1px 1px 5px black;
+  box-shadow: 0 1px 1px black;
 }
 
 .intro {
@@ -116,7 +129,7 @@ footer p {
 }
 
 .project-block img {
-  box-shadow: 3px 3px 5px black;
+  box-shadow: 0px 1px 3px black;
 }
 
 /***************** Project Block Hover Effect ********************/
@@ -198,18 +211,23 @@ footer p {
 /* title */
 .navbar-default .navbar-brand {
     color: white;
+    font-weight: 500;
 }
-.navbar-default .navbar-brand:hover,
-.navbar-default .navbar-brand:focus {
-    color: white;
+
+.navbar-default .navbar-brand:hover {
+  color: white;
 }
+
 /* link */
 .navbar-default .navbar-nav > li > a {
     color: white;
+    transition: background-color 0.4s ease;
 }
+
 .navbar-default .navbar-nav>li>a:focus,
 .navbar-default .navbar-nav>li>a:hover {
   color: white;
+  background-color: rgba(255,255,255,.25);
 }
 .navbar-default .navbar-nav > .active > a,
 .navbar-default .navbar-nav > .active > a:hover,
@@ -244,17 +262,34 @@ footer p {
     }
 }
 
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
+  background-color: rgba(255,255,255,0.2);
+}
+
 .project-link {
   background-color: #26C261;
-  padding: 5px 15px;
+  padding: 10px 20px;
   border-radius: 5px;
-  margin: 15px;
+  margin: 0 15px;
+  box-shadow: 0px 2px 4px black;
 }
 
 .project-description {
-  margin-top: 15px;
-  max-width: 400px;
+  margin-top: 30px;
   text-align: justify;
+  background-color: rgba(255,255,255, 0.1);
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 1px 1px 3px black;
+  color: #990033
+25% 		 #80002a
+20% 		 #660022
+15% 		 #4d0019
+10% 		 #330011
+5% 		 #1a0008
+0% 		 #000000
+;
 }
 
 
@@ -274,7 +309,27 @@ footer p {
     p {
       margin: 15px;
     }
+
+    .mobile-brand {
+      display: inline-block;
+    }
+
+    .desktop-brand {
+      display: none;
+    }
+
+
   }
+
+@media (max-width: 1080px) {
+  .intro-box {
+    height: 100%;
+  }
+
+  .project-block {
+    width: 90%;
+  }
+}
 
 
 /*************************** Navbar link hover animation**********************/
@@ -294,4 +349,8 @@ footer p {
   animation-timing-function: linear;
   -webkit-animation-iteration-count: 1;
   animation-iteration-count: 1;
+}
+
+#projects {
+  font-weight: 700;
 }
