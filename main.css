@@ -6,8 +6,9 @@ body {
   background-color: #497285;
 }
 
-h1 {
+.lg-tagline {
   font-size: 4em;
+  color: white;
 }
 
 h2 {
@@ -20,14 +21,15 @@ a {
   color: white;
 }
 
-a:hover {
-  color: #F73859;
+a:hover,
+i:hover {
+  color: #d0d0d0;
   text-decoration: none;
+  cursor: pointer;
 }
 
-a:visited, a:active {
-  color: white;
-  text-decoration: none;
+.green-link {
+  color: #26C261;
 }
 
 .logo {
@@ -101,14 +103,16 @@ footer p {
 
 .project-block,
 .intro {
-  background-color: rgba(255,255,255,0.1);
+  background-color: rgba(255, 255, 255, 0.1);
   padding: 30px;
   margin: 15px;
   border-radius: 10px;
+  box-shadow: 1px 1px 5px black;
 }
 
 .intro {
   font-size: 1.2em;
+  color: white;
 }
 
 .project-block img {
@@ -173,6 +177,11 @@ footer p {
   font-family: 'Nunito', sans-serif;
   color: white;
   box-shadow: 2px 2px 4px black;
+}
+
+.message-button:active {
+  position: relative;
+  top: 3px;
 }
 
 
@@ -245,6 +254,7 @@ footer p {
 .project-description {
   margin-top: 15px;
   max-width: 400px;
+  text-align: justify;
 }
 
 
