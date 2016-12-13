@@ -19,6 +19,10 @@ h2 {
   margin-bottom: 30px;
 }
 
+footer {
+  color: white;
+}
+
 .mobile-brand {
   display: none;
 }
@@ -28,7 +32,7 @@ h4 {
 }
 
 a {
-  color: white;
+  color: #26C261;
 }
 
 a:hover,
@@ -96,7 +100,8 @@ a:visited {
 
 .project-thumb {
   border-radius: 10px;
-  width: 300px;;
+  width: 300px;
+  margin-bottom: 25px;
 }
 
 footer p {
@@ -272,7 +277,7 @@ footer p {
 }
 
 .project-link {
-  background-color: #26C261;
+  background-color: #F64747;
   padding: 10px 20px;
   border-radius: 5px;
   margin: 0 15px;
