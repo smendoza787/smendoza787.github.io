@@ -37,6 +37,10 @@ i:hover {
   cursor: pointer;
 }
 
+a:visited {
+  text-decoration: none;
+}
+
 .green-link {
   color: #26C261;
 }
@@ -282,14 +286,7 @@ footer p {
   padding: 15px;
   border-radius: 10px;
   box-shadow: 1px 1px 3px black;
-  color: #990033
-25% 		 #80002a
-20% 		 #660022
-15% 		 #4d0019
-10% 		 #330011
-5% 		 #1a0008
-0% 		 #000000
-;
+  color: white;
 }
 
 
