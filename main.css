@@ -31,14 +31,17 @@ h4 {
   margin-bottom: 20px;
 }
 
-a {
+a,
+i {
   color: #26C261;
+  transition: color 0.4s ease;
 }
 
 a:hover,
 i:hover {
   text-decoration: none;
   cursor: pointer;
+  color: black;
 }
 
 a:visited {
@@ -228,13 +231,17 @@ footer p {
 }
 
 /* link */
-.navbar-default .navbar-nav > li > a {
+.navbar-default .navbar-nav > li > a,
+.desktop-brand {
     color: white;
     transition: background-color 0.4s ease;
+    border-radius: 5px;
 }
 
 .navbar-default .navbar-nav>li>a:focus,
-.navbar-default .navbar-nav>li>a:hover {
+.navbar-default .navbar-nav>li>a:hover,
+.desktop-brand:focus,
+.desktop-brand:hover {
   color: white;
   background-color: rgba(255,255,255,.25);
 }
@@ -274,6 +281,10 @@ footer p {
 .navbar-default .navbar-toggle:hover,
 .navbar-default .navbar-toggle:focus {
   background-color: rgba(255,255,255,0.2);
+}
+
+.navbar-default .navbar-brand:hover {
+    background-color: #26C261;
 }
 
 .project-link {
@@ -355,4 +366,9 @@ footer p {
 
 #projects {
   font-weight: 700;
+}
+
+.navbar-default .navbar-brand {
+    padding: 15px 50px;
+    border-radius: 5px;
 }
