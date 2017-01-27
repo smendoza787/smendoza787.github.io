@@ -288,7 +288,7 @@ footer p {
 }
 
 .project-link {
-  background-color: #F64747;
+  background-color: #009688;
   padding: 10px 20px;
   border-radius: 5px;
   margin: 0 15px;
@@ -303,6 +303,15 @@ footer p {
   border-radius: 10px;
   box-shadow: 1px 1px 3px black;
   color: white;
+}
+
+.project-block a {
+  color: white;
+  transition: color 0.4s ease;
+}
+
+.project-block a:hover {
+  color: black;
 }
 
 
