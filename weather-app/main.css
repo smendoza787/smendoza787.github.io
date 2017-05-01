@@ -1,0 +1,78 @@
+body {
+  background-color: #95E1D3;
+  background: linear-gradient(to right, #233142, #36506C);
+}
+
+footer {
+  margin-top: 50px;
+  text-align: center;
+  color: #EBF7FD;
+}
+
+h1 {
+  color: white;
+  font-size: 6em;
+  font-family: 'Lily Script One', cursive;
+  text-align: center;
+  text-shadow: 2px 2px 3px black;
+  margin-bottom: 75px;
+}
+
+h2 {
+  font-size: 3em;
+  margin: 10px;
+  color: white;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.weather {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 75%;
+  margin: 35px auto;
+  border: #EBF7FD 4px solid;
+  background: #233142;
+  border-radius: 20px;
+  max-width: 700px;
+  padding: 20px;
+  box-shadow: 3px 3px 5px black;
+}
+
+#temperature,
+#celsius {
+  color: #F23547;
+}
+
+#credit {
+  color: white;
+  position: relative;
+  top: 25px;
+}
+
+#credit a {
+  color: lightgrey;
+}
+
+#toggle-button {
+  border: none;
+  font-family: 'Ubuntu', sans-serif;
+  padding: 15px 40px;
+  border-radius: 10px;
+  background-color: #F23557;
+  color: black;
+  box-shadow: 2px 2px 3px black;
+}
+
+#toggle-button:hover {
+  background-color: #f94062;
+}
+
+#toggle-button:active {
+  position: relative;
+  top: 2px;
+  left: 2px;
+  box-shadow: 0 0 0 black;
+}

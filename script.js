@@ -12,7 +12,3 @@ $(function() {
     }
   });
 });
-
-$(".project-block").hover( function(){
-  $(this).addClass("animated fadeOut");
-});

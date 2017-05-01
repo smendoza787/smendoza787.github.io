@@ -20,7 +20,6 @@ body {
 
 h2 {
   font-size: 4em;
-  padding-top: 60px;
   margin-bottom: 30px;
   font-family: 'Rajdhani', sans-serif;
 }
@@ -189,7 +188,7 @@ footer p {
 }
 
 .column-right {
-  width: 500px;
+  width: 550px;
 }
 
 .contact-stuff {
@@ -388,4 +387,11 @@ footer p {
 .navbar-default .navbar-brand {
     padding: 15px 50px;
     border-radius: 5px;
+}
+
+.portfolio-header {
+  background-color: rgba(0,0,0,0.1);
+  padding: 10px;
+  margin-bottom: 20px;
+  box-shadow: 1px 1px 3px black;
 }
