@@ -315,6 +315,7 @@ footer p {
 .project-block a {
   color: white;
   transition: color 0.4s ease;
+  font-size: 1.25em;
 }
 
 .project-block a:hover {
