@@ -1,7 +1,7 @@
 /* pink: #b50d4c */
 
 * {
-  font-family: 'Arimo', sans-serif;
+  font-family: 'Quicksand', sans-serif;
   font-weight: 300;
   box-sizing: border-box;
   /* border: 1px solid red; */
@@ -18,6 +18,17 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  overflow: hidden;
+}
+
+#pink-circle {
+  width: 1250px;
+  height: 1250px;
+  background-color: #b50d4c;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  left: 100px;
 }
 
 /* avatar img */
@@ -30,6 +41,7 @@ body {
 .avatar-img, .avatar-text {
   margin: 0 auto;
   text-align: center;
+  z-index: 100;
 }
 
 .avatar-text button {
@@ -38,6 +50,17 @@ body {
   height: 35px;
   border: none;
   border-radius: 500px;
+  z-index: 100;
+}
+
+.avatar-h1 {
+  font-family: 'Megrim', sans-serif;
+  font-size: 3.5em;
+}
+
+.avatar-h2 {
+  color: #00a2ff;
+  margin-bottom: 25px;
 }
 
 /* a:visited {
