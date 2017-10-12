@@ -1,76 +1,54 @@
+/* pink: #b50d4c */
+
 * {
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Arimo', sans-serif;
   font-weight: 300;
   box-sizing: border-box;
-}
-
-.navbar-brand,
-.desktop-brand {
-  font-family: 'Rajdhani', sans-serif;
+  /* border: 1px solid red; */
 }
 
 body {
-  background-color: #497285;
+  background-color: #18264b;
 }
 
-.lg-tagline {
-  font-size: 4em;
+.top-div {
+  height: 90vh;
+  width: 100%;
   color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
-h2 {
-  font-size: 4em;
-  margin-bottom: 30px;
-  font-family: 'Rajdhani', sans-serif;
+/* avatar img */
+
+.avatar-img {
+  max-width: 200px;
+  max-height: 200px;
 }
 
-footer {
-  color: white;
+.avatar-img, .avatar-text {
+  margin: 0 auto;
+  text-align: center;
 }
 
-.mobile-brand {
-  display: none;
+.avatar-text button {
+  background-color: #b50d4c;
+  width: 100px;
+  height: 35px;
+  border: none;
+  border-radius: 500px;
 }
 
-h4 {
-  margin-bottom: 20px;
-}
-
-a,
-i {
-  color: #26C261;
-  transition: color 0.4s ease;
-}
-
-a:hover,
-i:hover {
+/* a:visited {
   text-decoration: none;
-  cursor: pointer;
-  color: black;
-}
-
-a:visited {
-  text-decoration: none;
-}
-
-.green-link {
-  color: #26C261;
-}
-
-.logo {
-  font-family: 'Cabin Sketch';
-  font-size: 1.5em;
-}
+} */
 
 .fa {
-  color: white;
+  color: #b50d4c;
 }
 
-.fa:visited {
-  color: #283739;
-}
-
-.intro-box {
+/* .intro-box {
   margin-bottom: 10px;
   padding: 75px 0;
   width: 100%;
@@ -85,136 +63,7 @@ a:visited {
   background: -webkit-linear-gradient(top,  #2b4450 0%,#497285 100%); /* Chrome10-25,Safari5.1-6 */
   background: linear-gradient(to bottom,  #2b4450 0%,#497285 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2b4450', endColorstr='#497285',GradientType=0 ); /* IE6-9 */
-}
-
-.profile-pic {
-  width: 100%;
-  border-radius: 50%;
-  box-shadow: 1px 1px 3px black;
-}
-
-
-
-.portfolio-box {
-  margin-top: -20px;
-  margin-bottom: 60px;
-}
-
-.projects {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-
-.project-thumb {
-  border-radius: 10px;
-  width: 300px;
-  margin-bottom: 10px;
-}
-
-footer p {
-  margin: 10px;
-}
-
-.caption {
-  color: #26C261;
-  font-size: 2em;
-  margin-top: 20px;
-  font-family: 'Rajdhani', sans-serif;
-  text-shadow: 0 2px 2px rgba(0,0,0,0.5);
-}
-
-.shadow {
-  color: #26C261;
-  text-shadow: 1px 1px 3px black;
-}
-
-.project-block {
-  width: 400px;
-}
-
-.project-block,
-.intro {
-  background-color: rgba(0,0,0, 0.1);
-  padding: 30px;
-  margin: 15px;
-  border-radius: 10px;
-  box-shadow: 0 1px 1px black;
-}
-
-.intro {
-  font-size: 1.2em;
-  color: white;
-}
-
-.project-block img {
-  box-shadow: 0px 1px 3px black;
-}
-
-/***************** Project Block Hover Effect ********************/
-.hvr-bounce-in {
-  display: block;
-  -webkit-transform: perspective(1px) translateZ(0);
-  transform: perspective(1px) translateZ(0);
-  box-shadow: 0 0 1px transparent;
-  -webkit-transition-duration: 0.5s;
-  transition-duration: 0.5s;
-}
-.hvr-bounce-in:hover, .hvr-bounce-in:focus, .hvr-bounce-in:active {
-  -webkit-transform: scale(1.05);
-  transform: scale(1.05);
-  -webkit-transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
-  transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
-}
-
-.container-fluid {
-  max-width; 800px:
-}
-
-/* .back-to-top {
-  display: inline;
 } */
-
-.columns {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  align-items: center;
-  width: 75%;
-}
-
-.column-left {
-  width: 300px;
-}
-
-.column-right {
-  width: 550px;
-}
-
-.contact-stuff {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  flex-wrap: wrap;
-  margin-bottom: 10px;
-}
-
-
-.message-button {
-  background-color: #26C261;
-  border: none;
-  border-radius: 10px;
-  padding: 15px;
-  margin: 15px auto;
-  font-family: 'Nunito', sans-serif;
-  color: white;
-  box-shadow: 2px 2px 4px black;
-}
-
-.message-button:active {
-  position: relative;
-  top: 3px;
-}
 
 
 /********************** navbar *****************************/
@@ -224,13 +73,14 @@ footer p {
 }
 
 .navbar-default {
-    background-color: #2C4652;
+    background-color: #121c36;
     border: none;
 }
 /* title */
 .navbar-default .navbar-brand {
-    color: white;
-    font-weight: 500;
+  font-family: 'Monoton', sans-serif;
+  font-size: 2em;
+  color: #00a2ff;
 }
 
 .navbar-default .navbar-brand:hover {
@@ -250,7 +100,7 @@ footer p {
 .desktop-brand:focus,
 .desktop-brand:hover {
   color: white;
-  background-color: rgba(255,255,255,.25);
+  background-color: #121c36;
 }
 .navbar-default .navbar-nav > .active > a,
 .navbar-default .navbar-nav > .active > a:hover,
@@ -283,122 +133,4 @@ footer p {
     .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
         color: white ;
     }
-}
-
-.navbar-default .navbar-toggle:hover,
-.navbar-default .navbar-toggle:focus {
-  background-color: rgba(255,255,255,0.2);
-}
-
-.navbar-default .navbar-brand:hover {
-    background-color: #26C261;
-}
-
-.project-links {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-.project-link {
-  background-color: #009688;
-  padding: 10px 20px;
-  border-radius: 5px;
-  margin: 5px 15px;
-  box-shadow: 0px 2px 4px black;
-}
-
-.project-description {
-  margin-top: 10px;
-  text-align: justify;
-  background-color: rgba(255,255,255, 0.1);
-  padding: 15px;
-  border-radius: 10px;
-  box-shadow: 1px 1px 3px black;
-  color: white;
-}
-
-.project-block a {
-  color: white;
-  transition: color 0.4s ease;
-  font-size: 1.25em;
-}
-
-.project-block a:hover {
-  color: black;
-}
-
-
-
-/* Media Queries */
-
-@media (max-width: 550px) {
-    h1 {
-      font-size: 2.4em;
-      margin: 30px;
-    }
-
-    .project-block img {
-      width: 90%;
-    }
-
-    p {
-      margin: 15px;
-    }
-
-    .mobile-brand {
-      display: inline-block;
-    }
-
-    .desktop-brand {
-      display: none;
-    }
-
-
-  }
-
-@media (max-width: 1080px) {
-  .intro-box {
-    height: 100%;
-  }
-
-  .project-block {
-    width: 90%;
-  }
-}
-
-
-/*************************** Navbar link hover animation**********************/
-.hvr-pop {
-  display: inline-block;
-  vertical-align: middle;
-  -webkit-transform: perspective(1px) translateZ(0);
-  transform: perspective(1px) translateZ(0);
-  box-shadow: 0 0 1px transparent;
-}
-.hvr-pop:hover, .hvr-pop:focus, .hvr-pop:active {
-  -webkit-animation-name: hvr-pop;
-  animation-name: hvr-pop;
-  -webkit-animation-duration: 0.3s;
-  animation-duration: 0.3s;
-  -webkit-animation-timing-function: linear;
-  animation-timing-function: linear;
-  -webkit-animation-iteration-count: 1;
-  animation-iteration-count: 1;
-}
-
-#projects {
-  font-weight: 700;
-}
-
-.navbar-default .navbar-brand {
-    padding: 15px 50px;
-    border-radius: 5px;
-}
-
-.portfolio-header {
-  background-color: rgba(0,0,0,0.1);
-  padding: 10px;
-  margin-bottom: 20px;
-  box-shadow: 1px 1px 3px black;
 }
