@@ -13,6 +13,9 @@ body {
 
 .top-div {
   height: 100vh;
+}
+
+.top-div, .middle-div {
   width: 100%;
   color: white;
   display: flex;
@@ -23,14 +26,69 @@ body {
   position: relative;
 }
 
-#pink-circle {
+.middle-div h1 {
+  font-size: 4em;
+}
+
+.project {
+  background-color: #fff;
+  padding: 15px 5px;
+  border-radius: 3px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px;
+  color: black;
+  text-align: center;
+}
+
+.project h3 {
+  margin: 0;
+  margin: 10px;
+}
+
+.project img {
+  border-radius: 3px;
+}
+
+.project-text a {
+  background-color: #00a2ff;
+  padding: 5px 15px;
+  border-radius: 500px;
+  color: white;
+  margin: 0 5px;
+}
+
+.project-text a:hover {
+  text-decoration: none;
+}
+
+.project-thumb {
+  width: 125px;
+  height: 125px;
+}
+
+.project, .middle-div h1 {
+  z-index: 100;
+}
+
+.pink-circle, .pink-circle-2 {
   width: 2000px;
   height: 2000px;
   background-color: #b50d4c;
   border-radius: 50%;
   position: absolute;
+}
+
+.pink-circle {
   top: 0;
   left: -200px;
+}
+
+.pink-circle-2 {
+  bottom: 0;
+  right: -200px;
 }
 
 /* avatar img */
@@ -47,16 +105,19 @@ body {
 }
 
 .pink-btn {
+  transition: border 0.5s ease;
   background-color: #b50d4c;
   padding: 10px 20px;
   border-radius: 500px;
   border: 1px solid white;
   color: white;
+  margin: 0 5px;
 }
 
 .pink-btn:hover {
   text-decoration: none;
-  color: #00a2ff;
+  color: white;
+  border: 1px solid #00a2ff;
 }
 
 .avatar-h1 {
@@ -66,7 +127,7 @@ body {
 }
 
 .avatar-h2 {
-  margin-bottom: 25px;
+  margin-bottom: 40px;
 }
 
 /* a:visited {
