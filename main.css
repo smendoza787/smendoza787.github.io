@@ -18,6 +18,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   overflow: hidden;
 }
 
@@ -34,32 +35,36 @@ body {
 /* avatar img */
 
 .avatar-img {
+  width: 100%;
   max-width: 200px;
   max-height: 200px;
 }
 
 .avatar-img, .avatar-text {
-  margin: 0 auto;
   text-align: center;
   z-index: 100;
 }
 
-.avatar-text button {
+.pink-btn {
   background-color: #b50d4c;
-  width: 100px;
-  height: 35px;
-  border: none;
+  padding: 10px 20px;
   border-radius: 500px;
-  z-index: 100;
+  border: 1px solid white;
+  color: white;
+}
+
+.pink-btn:hover {
+  text-decoration: none;
+  color: #00a2ff;
 }
 
 .avatar-h1 {
-  font-family: 'Megrim', sans-serif;
+  font-family: 'Cabin Sketch', sans-serif;
   font-size: 3.5em;
+  color: #00a2ff;
 }
 
 .avatar-h2 {
-  color: #00a2ff;
   margin-bottom: 25px;
 }
 
