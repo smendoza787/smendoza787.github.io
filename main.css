@@ -24,13 +24,13 @@ body {
 }
 
 #pink-circle {
-  width: 1250px;
-  height: 1250px;
+  width: 2000px;
+  height: 2000px;
   background-color: #b50d4c;
   border-radius: 50%;
   position: absolute;
   top: 0;
-  left: 100px;
+  left: -200px;
 }
 
 /* avatar img */
