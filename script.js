@@ -1,14 +1,15 @@
 $(function() {
-  $('a[href*="#"]:not([href="#"])').click(function() {
-    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-      var target = $(this.hash);
-      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-      if (target.length) {
-        $('html, body').animate({
-          scrollTop: target.offset().top
-        }, 1000);
-        return false;
-      }
-    }
-  });
-});
+  $(document).scroll(function() {
+    var $nav = $('.navbar')
+    $nav.toggleClass('scrolled', $(this).scrollTop() > ($('.welcome').height() - 275))
+  })
+  $(window).scroll(function(){
+    var $wScroll = $(this).scrollTop()
+    $('.name').css({
+      'transform' : 'translate(0px, '+ $wScroll /2.5 +'%)'
+    })
+    $('.title').css({
+      'opacity' : Math.floor($wScroll) + '.0'
+    })
+  })
+})
