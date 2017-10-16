@@ -84,10 +84,9 @@ body {
 
 /************************************  middle div ******************************/
 #about {
-  padding: 200px 25px;
+  padding: 250px 25px 200px 25px;
   text-align: center;
   position: relative;
-  overflow: hidden;
 }
 
 #about h1 {
