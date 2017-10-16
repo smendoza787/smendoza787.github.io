@@ -1,18 +1,8 @@
 $(function() {
   $(document).scroll(function() {
     var $nav = $('.navbar')
-    $nav.toggleClass('scrolled', $(this).scrollTop() > ($('#about').height() - 200))
+    $nav.toggleClass('scrolled', $(this).scrollTop() > ($('#about').height() + 100))
   })
-  $(window).scroll(function(){
-    var $wScroll = $(this).scrollTop()
-    $('.name').css({
-      'transform' : 'translate(0px, -'+ $wScroll /2.7 +'%)'
-    })
-    $('.title').css({
-      'opacity' : Math.floor($wScroll) + '.0'
-    })
-  })
-
   $('a[href*="#"]')
   // Remove links that don't actually link to anything
   .not('[href="#"]')
