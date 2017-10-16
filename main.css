@@ -58,6 +58,10 @@ body {
 .navbar-links > a, .navbar-links-mobile > a {
   color: #fff;
 }
+
+.navbar-link h3 {
+  font-family: 'Roboto Slab', sans-serif;
+}
 /************************************** navbar ************************************/
 
 /************************************  top div ******************************/
@@ -300,4 +304,9 @@ body {
   .projects-slant {
     transform: rotate(2deg);
   }
+}
+
+#particles-js {
+  width: 100%;
+  position: fixed;
 }
