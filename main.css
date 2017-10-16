@@ -68,24 +68,23 @@ body {
   height: 110vh;
   overflow: hidden;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
   text-align: center;
 }
 
-.name {
+#name {
   color: #ff1460;
   text-shadow: 0 2px 1px #383838;
-  font-size: 7em;
+  font-size: 8em;
   font-family: 'Pacifico', cursive;
   position: fixed;
+  margin-top: 250px;
 }
 /************************************  top div ******************************/
 
 /************************************  middle div ******************************/
 #about {
-  padding: 250px 25px 200px 25px;
+  padding: 200px 25px;
   text-align: center;
   position: relative;
   background-color: #4593c7;
@@ -259,8 +258,8 @@ body {
 /**************************************** Media Queries ********************************************/
 
 @media only screen and (max-width: 824px) {
-  .name {
-    font-size: 5em;
+  #name {
+    font-size: 5.75em;
   }
 
   .navbar-links {
@@ -290,6 +289,10 @@ body {
 
   .about-intro {
     font-size: 1.5em;
+  }
+
+  #about h1 {
+    font-size: 4.5em;
   }
 }
 
