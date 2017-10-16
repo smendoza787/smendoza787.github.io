@@ -79,6 +79,7 @@ body {
   text-shadow: 0 2px 1px #383838;
   font-size: 7em;
   font-family: 'Pacifico', cursive;
+  position: fixed;
 }
 /************************************  top div ******************************/
 
@@ -87,6 +88,7 @@ body {
   padding: 250px 25px 200px 25px;
   text-align: center;
   position: relative;
+  background-color: #4593c7;
 }
 
 #about h1 {
@@ -100,6 +102,7 @@ body {
 .about-intro {
   max-width: 850px;
   margin: 0 auto;
+  font-size: 1.22em;
 }
 
 #about a {
@@ -133,11 +136,11 @@ body {
 /************************ Imported Stuff from old portfolio ************************/
 .projects-slant {
   background-color: #f56268;
-  width: 105%;
+  width: 103%;
   height: 65px;
   position: absolute;
   bottom: -37px;
-  left: -10px;
+  left: -5px;
   transform: rotate(5deg);
 }
 
