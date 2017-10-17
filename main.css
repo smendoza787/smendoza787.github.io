@@ -32,7 +32,7 @@ body {
 }
 
 .navbar a:hover {
-  color: #4593c7;
+  color: #858585;
   transition: color 350ms ease-out;
 }
 
@@ -69,11 +69,9 @@ body {
 }
 
 .resume-btn {
-  background-color: #ff1460;
+  border: 1px solid #ffffff;
   padding: 8px 12px;
   border-radius: 3px;
-  text-shadow: none;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
 }
 /************************************** navbar ************************************/
 
