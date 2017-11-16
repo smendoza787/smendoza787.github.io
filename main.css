@@ -83,7 +83,7 @@ body {
 
 .name {
   max-width: 800px;
-  margin-top: 250px;
+  margin-top: 150px;
   display: flex;
   position: fixed;
   flex-direction: column;
@@ -102,18 +102,36 @@ body {
 .welcome-links {
   display: flex;
   align-items: center;
+  margin-top: 25px;
 }
 
 .welcome-links a {
   margin-right: 15px;
+  border: 2px solid #ff145f;
+  border-radius: 300px;
+  padding: 10px;
+  color: #ff145f;
+  display: block;
+  width: 125px;
+  background-color: rgba(0,0,0,0);
+  transition: all 350ms ease-in-out;
 }
 
-.rounded-border {
-  border: 2px solid #fff;
-  border-radius: 10px;
-  padding: 10px;
+.welcome-links a:hover {
+  transition: all 350ms ease-in-out;
+  background-color: #ff145f;
+  color: #fff;
 }
-/************************************  top div ******************************/
+
+.arrow {
+  width: 35px;
+  height: 35px;
+  color: white;
+  margin-top: 120px;
+}
+
+
+/************************************ END top div ******************************/
 
 /************************************  middle div ******************************/
 #about {
