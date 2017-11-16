@@ -54,7 +54,7 @@ body {
 }
 
 .navbar-links, .navbar-links-mobile {
-  width: 50%;
+  width: 30%;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -67,33 +67,51 @@ body {
 .navbar-link h3 {
   font-family: 'Roboto Slab', sans-serif;
 }
-
-.resume-btn {
-  border: 1px solid #ffffff;
-  padding: 8px 12px;
-  border-radius: 3px;
-}
 /************************************** navbar ************************************/
 
 /************************************  top div ******************************/
 .welcome {
-  position: relative;
   background: url('./images/welcome.png') no-repeat fixed center center;
   background-size: cover;
   height: 110vh;
+  width: 100%;
   overflow: hidden;
+  text-align: center;
   display: flex;
   justify-content: center;
-  text-align: center;
 }
 
-#name {
+.name {
+  max-width: 800px;
+  margin-top: 250px;
+  display: flex;
+  position: fixed;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.name h1 {
   color: #ff1460;
   text-shadow: 0 2px 1px #383838;
   font-size: 8em;
   font-family: 'Pacifico', cursive;
-  position: fixed;
-  margin-top: 250px;
+  margin: 0 auto;
+}
+
+.welcome-links {
+  display: flex;
+  align-items: center;
+}
+
+.welcome-links a {
+  margin-right: 15px;
+}
+
+.rounded-border {
+  border: 2px solid #fff;
+  border-radius: 10px;
+  padding: 10px;
 }
 /************************************  top div ******************************/
 
@@ -275,7 +293,7 @@ body {
 /**************************************** Media Queries ********************************************/
 
 @media only screen and (max-width: 824px) {
-  #name {
+  .name h1 {
     font-size: 5.75em;
   }
 
