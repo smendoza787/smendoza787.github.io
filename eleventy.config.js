@@ -1,5 +1,5 @@
 import { feedPlugin } from "@11ty/eleventy-plugin-rss";
-const { EleventyHtmlBasePlugin } = require("@11ty/eleventy");
+import { EleventyHtmlBasePlugin } from "@11ty/eleventy";
 
 export default function (eleventyConfig) {
   // Passthrough copy for static assets
