@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xml:base="https://smendoza787.github.io/smendoza787.github.io/" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Sergio Mendoza</title>
+    <link>https://smendoza787.github.io/smendoza787.github.io/</link>
+    <atom:link href="https://smendoza787.github.io/smendoza787.github.io/feed.xml" rel="self" type="application/rss+xml" />
+    <description>A minimal dev blog</description>
+    <language>en</language>
+    <item>
+      <title>Building in Public</title>
+      <link>https://smendoza787.github.io/smendoza787.github.io/posts/building-in-public/</link>
+      <description>&lt;p&gt;There&#39;s a concept I keep coming back to: &lt;em&gt;building in public&lt;/em&gt;. The idea is simple—share your work as you create it, not just when it&#39;s polished and perfect.&lt;/p&gt;
+&lt;h2&gt;The fear&lt;/h2&gt;
+&lt;p&gt;Let&#39;s be honest: showing unfinished work is uncomfortable. There&#39;s always that voice saying:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&amp;quot;What if people think this is amateur? What if I&#39;m doing it wrong?&amp;quot;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;But here&#39;s what I&#39;ve learned—everyone&#39;s figuring it out as they go. The people whose work you admire? They&#39;ve shipped plenty of messy first versions.&lt;/p&gt;
+&lt;h2&gt;The benefits&lt;/h2&gt;
+&lt;p&gt;When you build in public, interesting things happen:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;You learn faster&lt;/strong&gt; — Feedback, even just knowing someone might see your work, sharpens your thinking&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;You connect with people&lt;/strong&gt; — Others on similar journeys find you&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;You create a trail&lt;/strong&gt; — Your past work becomes proof of growth&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2&gt;A practical example&lt;/h2&gt;
+&lt;p&gt;Here&#39;s a function I wrote recently. It&#39;s not perfect, but it works:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-javascript&quot;&gt;function formatDate(date) {
+  return new Intl.DateTimeFormat(&#39;en-US&#39;, {
+    year: &#39;numeric&#39;,
+    month: &#39;long&#39;, 
+    day: &#39;numeric&#39;
+  }).format(new Date(date));
+}
+
+// Usage
+formatDate(&#39;2024-11-28&#39;); // &amp;quot;November 28, 2024&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;In the past, I might have hesitated to share something this simple. But that&#39;s the point—small, useful things add up.&lt;/p&gt;
+&lt;h2&gt;The practice&lt;/h2&gt;
+&lt;p&gt;Building in public isn&#39;t about broadcasting everything. It&#39;s about being open to sharing the &lt;em&gt;process&lt;/em&gt;, not just the results. Some ways to practice:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Write about what you&#39;re learning&lt;/li&gt;
+&lt;li&gt;Share your side projects, even early on&lt;/li&gt;
+&lt;li&gt;Document your decisions and trade-offs&lt;/li&gt;
+&lt;li&gt;Be honest about what you don&#39;t know yet&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Starting now&lt;/h2&gt;
+&lt;p&gt;This blog is my practice. It&#39;s not perfect. The design is intentionally simple. The writing will improve over time.&lt;/p&gt;
+&lt;p&gt;But it&#39;s &lt;em&gt;out there&lt;/em&gt;. And that&#39;s the whole point.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;em&gt;What are you building? Consider opening that garage door.&lt;/em&gt;&lt;/p&gt;
+</description>
+      <pubDate>Thu, 28 Nov 2024 24:00:00 GMT</pubDate>
+      <dc:creator>Sergio Mendoza</dc:creator>
+      <guid>https://smendoza787.github.io/smendoza787.github.io/posts/building-in-public/</guid>
+    </item>
+    <item>
+      <title>Hello World</title>
+      <link>https://smendoza787.github.io/smendoza787.github.io/posts/hello-world/</link>
+      <description>&lt;p&gt;Welcome to my blog. I&#39;ve been meaning to start writing for a while now, and here we are.&lt;/p&gt;
+&lt;h2&gt;Why a blog?&lt;/h2&gt;
+&lt;p&gt;There&#39;s something special about having your own space on the internet. Social media comes and goes, but a simple blog—your own domain, your own words—feels more permanent somehow.&lt;/p&gt;
+&lt;p&gt;I plan to write about:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Software development&lt;/strong&gt; — the craft, the tools, the occasional frustration&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Learning in public&lt;/strong&gt; — sharing what I&#39;m figuring out as I go&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Side projects&lt;/strong&gt; — documenting the builds and the breakdowns&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;The setup&lt;/h2&gt;
+&lt;p&gt;This site is intentionally minimal. Just words on a page, like paper. No analytics, no comments, no distractions. If you want to reach out, find me elsewhere.&lt;/p&gt;
+&lt;p&gt;The tech stack is simple:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;- Eleventy for static site generation
+- Vanilla CSS for styling
+- GitHub Pages for hosting
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;That&#39;s it. No frameworks, no build complexity. Just markdown files turning into HTML.&lt;/p&gt;
+&lt;h2&gt;What&#39;s next&lt;/h2&gt;
+&lt;p&gt;I don&#39;t have a posting schedule. I&#39;ll write when I have something worth sharing. Quality over quantity.&lt;/p&gt;
+&lt;p&gt;Thanks for reading. Here&#39;s to building in public.&lt;/p&gt;
+</description>
+      <pubDate>Fri, 29 Nov 2024 24:00:00 GMT</pubDate>
+      <dc:creator>Sergio Mendoza</dc:creator>
+      <guid>https://smendoza787.github.io/smendoza787.github.io/posts/hello-world/</guid>
+    </item>
+  </channel>
+</rss>
