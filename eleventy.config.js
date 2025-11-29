@@ -1,9 +1,13 @@
 import { feedPlugin } from "@11ty/eleventy-plugin-rss";
+const { EleventyHtmlBasePlugin } = require("@11ty/eleventy");
 
-export default function(eleventyConfig) {
+export default function (eleventyConfig) {
   // Passthrough copy for static assets
   eleventyConfig.addPassthroughCopy("src/css");
   eleventyConfig.addPassthroughCopy("public");
+  eleventyConfig.addPlugin(EleventyHtmlBasePlugin, {
+    pathPrefix: "/smendoza787.github.io/",
+  });
 
   // RSS Feed plugin
   eleventyConfig.addPlugin(feedPlugin, {
@@ -20,8 +24,8 @@ export default function(eleventyConfig) {
       base: "https://smendoza787.github.io/",
       author: {
         name: "Sergio Mendoza",
-      }
-    }
+      },
+    },
   });
 
   // Date formatting filter
@@ -39,7 +43,7 @@ export default function(eleventyConfig) {
   });
 
   // Create posts collection sorted by date
-  eleventyConfig.addCollection("posts", function(collectionApi) {
+  eleventyConfig.addCollection("posts", function (collectionApi) {
     return collectionApi.getFilteredByGlob("src/posts/*.md").sort((a, b) => {
       return b.date - a.date;
     });
@@ -56,4 +60,3 @@ export default function(eleventyConfig) {
     htmlTemplateEngine: "njk",
   };
 }
-
