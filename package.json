@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "eleventy --serve",
     "build": "eleventy",
-    "start": "eleventy --serve"
+    "start": "eleventy --serve",
+    "build-ghpages": "npx @11ty/eleventy --pathprefix=/smendoza787.github.io/"
   },
   "devDependencies": {
     "@11ty/eleventy": "^3.0.0",
