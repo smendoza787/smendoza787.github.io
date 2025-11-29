@@ -1,0 +1,21 @@
+---
+layout: base.njk
+---
+<article class="post">
+  <header class="post-header">
+    <time datetime="{{ date | isoDate }}" class="post-date">{{ date | readableDate }}</time>
+    <h1 class="post-title">{{ title }}</h1>
+    {% if description %}
+    <p class="post-description">{{ description }}</p>
+    {% endif %}
+  </header>
+  
+  <div class="post-content prose">
+    {{ content | safe }}
+  </div>
+
+  <footer class="post-footer">
+    <a href="/" class="back-link">&larr; Back to all posts</a>
+  </footer>
+</article>
+

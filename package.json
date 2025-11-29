@@ -1,0 +1,15 @@
+{
+  "name": "smendoza787-github-io",
+  "type": "module",
+  "version": "1.0.0",
+  "description": "A minimal dev blog built with Eleventy",
+  "scripts": {
+    "dev": "eleventy --serve",
+    "build": "eleventy",
+    "start": "eleventy --serve"
+  },
+  "devDependencies": {
+    "@11ty/eleventy": "^3.0.0",
+    "@11ty/eleventy-plugin-rss": "^2.0.2"
+  }
+}
