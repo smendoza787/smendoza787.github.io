@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Redesign Concept — Gaetano&#39;s Italian (Denver 80211) | Sergio Mendoza</title>
+  <meta name="description" content="A quick UX/UI mockup for a local Denver business site using details from their current website.">
+  <link rel="icon" href="/smendoza787.github.io/favicon.svg" type="image/svg+xml">
+  <link rel="alternate" type="application/rss+xml" title="Sergio Mendoza" href="/smendoza787.github.io/feed.xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/smendoza787.github.io/css/style.css">
+</head>
+<body>
+  <a href="#main" class="skip-link">Skip to content</a>
+  
+  <header class="site-header">
+    <nav class="nav">
+      <a href="/smendoza787.github.io/" class="site-title">Sergio Mendoza</a>
+      <div class="nav-links">
+        <a href="/smendoza787.github.io/">Blog</a>
+        <a href="/smendoza787.github.io/feed.xml" class="rss-link" title="RSS Feed">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M4 11a9 9 0 0 1 9 9"></path>
+            <path d="M4 4a16 16 0 0 1 16 16"></path>
+            <circle cx="5" cy="19" r="1"></circle>
+          </svg>
+        </a>
+        <button class="theme-toggle" aria-label="Toggle dark mode" title="Toggle dark mode">
+          <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+          <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main" class="main">
+    <article class="post">
+  <header class="post-header">
+    <time datetime="2026-03-01T00:00:00.000Z" class="post-date">March 1, 2026</time>
+    <h1 class="post-title">Redesign Concept — Gaetano&#39;s Italian (Denver 80211)</h1>
+    
+    <p class="post-description">A quick UX/UI mockup for a local Denver business site using details from their current website.</p>
+    
+  </header>
+  
+  <div class="post-content prose">
+    <p>I picked <strong>Gaetano's Italian</strong> in Highland (near ZIP <strong>80211</strong>) as a redesign candidate.</p>
+<p>Their current site has good content, but it feels heavy and scattered on first load (lots of visual/technical weight before the main user actions). I put together a cleaner concept focused on the three things diners usually need fast:</p>
+<ol>
+<li><strong>Reserve a table</strong></li>
+<li><strong>Order online</strong></li>
+<li><strong>Find location + hours</strong></li>
+</ol>
+<h3>Source data used from current site</h3>
+<ul>
+<li>Brand/name: <strong>Gaetano's Restaurant / Gaetano's Italian</strong></li>
+<li>Positioning: authentic Italian cuisine with pizza, pasta, catering, dine-in/takeout/delivery</li>
+<li>Neighborhood/address context: <strong>3760 Tejon St, Denver</strong> (from the site content/news section)</li>
+<li>Social presence references: Facebook + Instagram links</li>
+</ul>
+<hr>
+<h2>Homepage Mockup (HTML/CSS concept)</h2>
+<style>
+  .mockup-shell {
+    --bg: #fffaf6;
+    --ink: #1c1a1a;
+    --muted: #5f5a58;
+    --brand: #b72a2a;
+    --brand-dark: #861d1d;
+    --card: #ffffff;
+    --line: #eadfda;
+    --accent: #f3d7c2;
+
+    margin: 2rem 0;
+    border: 1px solid var(--line);
+    border-radius: 16px;
+    overflow: hidden;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+  }
+
+  .mockup-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 1.25rem;
+    background: #fff;
+    border-bottom: 1px solid var(--line);
+    flex-wrap: wrap;
+    gap: 0.75rem;
+  }
+
+  .mockup-brand {
+    font-weight: 800;
+    letter-spacing: 0.02em;
+  }
+
+  .mockup-links {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    font-size: 0.92rem;
+  }
+
+  .mockup-links span { color: var(--muted); }
+
+  .mockup-cta {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    padding: 0.5rem 0.9rem;
+    border-radius: 999px;
+    border: 0;
+    font-weight: 700;
+    background: var(--brand);
+    color: #fff;
+  }
+
+  .mockup-hero {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    gap: 1rem;
+    padding: 1.5rem;
+  }
+
+  .mockup-hero-card,
+  .mockup-panel,
+  .mockup-mini {
+    background: var(--card);
+    border: 1px solid var(--line);
+    border-radius: 14px;
+  }
+
+  .mockup-hero-card {
+    padding: 1.2rem;
+    background: linear-gradient(165deg, #fff, #fff6f2);
+  }
+
+  .mockup-kicker {
+    display: inline-block;
+    background: #ffe9de;
+    color: #7e2c2c;
+    border: 1px solid #f4c7ae;
+    padding: 0.2rem 0.55rem;
+    border-radius: 999px;
+    font-size: 0.75rem;
+    font-weight: 700;
+    margin-bottom: 0.75rem;
+  }
+
+  .mockup-hero h3 {
+    margin: 0 0 0.45rem;
+    font-size: 1.4rem;
+    line-height: 1.25;
+  }
+
+  .mockup-hero p {
+    margin: 0;
+    color: var(--muted);
+    line-height: 1.5;
+  }
+
+  .mockup-actions {
+    display: flex;
+    gap: 0.6rem;
+    margin-top: 1rem;
+    flex-wrap: wrap;
+  }
+
+  .mockup-btn {
+    padding: 0.55rem 0.8rem;
+    border-radius: 10px;
+    border: 1px solid var(--line);
+    background: #fff;
+    font-weight: 600;
+    font-size: 0.9rem;
+  }
+
+  .mockup-btn.primary {
+    background: var(--brand);
+    border-color: var(--brand);
+    color: #fff;
+  }
+
+  .mockup-panel {
+    padding: 1rem;
+    display: grid;
+    gap: 0.7rem;
+    align-content: start;
+  }
+
+  .mockup-panel h4,
+  .mockup-mini h4 {
+    margin: 0;
+    font-size: 1rem;
+  }
+
+  .mockup-hours {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 0.35rem 0.75rem;
+    font-size: 0.9rem;
+  }
+
+  .mockup-hours b { font-weight: 700; }
+
+  .mockup-grid {
+    padding: 0 1.5rem 1.5rem;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 0.8rem;
+  }
+
+  .mockup-mini {
+    padding: 0.9rem;
+    background: #fff;
+  }
+
+  .mockup-mini p {
+    margin: 0.45rem 0 0;
+    color: var(--muted);
+    font-size: 0.9rem;
+  }
+
+  .mockup-footer {
+    border-top: 1px solid var(--line);
+    background: #fff;
+    padding: 0.95rem 1.25rem;
+    color: var(--muted);
+    font-size: 0.85rem;
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+
+  @media (max-width: 860px) {
+    .mockup-hero { grid-template-columns: 1fr; }
+    .mockup-grid { grid-template-columns: 1fr; }
+  }
+</style>
+<div class="mockup-shell" role="img" aria-label="Homepage redesign mockup for Gaetano's Italian">
+  <div class="mockup-nav">
+    <div class="mockup-brand">GAETANO'S ITALIAN</div>
+    <div class="mockup-links">
+      <span>Menu</span>
+      <span>Reservations</span>
+      <span>Catering</span>
+      <span>Private Dining</span>
+      <span>Contact</span>
+    </div>
+    <button class="mockup-cta">Order Online</button>
+  </div>
+  <div class="mockup-hero">
+    <section class="mockup-hero-card">
+      <span class="mockup-kicker">Since Highland roots</span>
+      <h3>Classic Italian, modern online experience.</h3>
+      <p>
+        Pizza, pasta, and hospitality in the heart of Denver. This concept simplifies the journey
+        from "I'm hungry" to "table booked" in under 30 seconds.
+      </p>
+      <div class="mockup-actions">
+        <button class="mockup-btn primary">Reserve a Table</button>
+        <button class="mockup-btn">View Dinner Menu</button>
+        <button class="mockup-btn">Catering Inquiry</button>
+      </div>
+    </section>
+<p></p><aside class="mockup-panel">
+<h4>Visit Us</h4>
+<p style="margin:0;color:#5f5a58;font-size:0.92rem;">3760 Tejon St, Denver, CO</p>
+<div class="mockup-hours">
+<b>Mon–Thu</b><span>4:00 PM – 9:00 PM</span>
+<b>Fri</b><span>4:00 PM – 10:00 PM</span>
+<b>Sat</b><span>3:00 PM – 10:00 PM</span>
+<b>Sun</b><span>3:00 PM – 9:00 PM</span>
+</div>
+<button class="mockup-btn">Get Directions</button>
+</aside><p></p>
+  </div>
+  <div class="mockup-grid">
+    <section class="mockup-mini">
+      <h4>Tonight's Focus</h4>
+      <p>House-made pasta, wood-fired pizza, and rotating chef specials.</p>
+    </section>
+    <section class="mockup-mini">
+      <h4>For Events</h4>
+      <p>Private dining and catering lead forms front-and-center with fast quote workflow.</p>
+    </section>
+    <section class="mockup-mini">
+      <h4>Social Proof</h4>
+      <p>Pull latest Instagram/Facebook content into a clean, lightweight feed strip.</p>
+    </section>
+  </div>
+  <div class="mockup-footer">
+    <span>Concept redesign for blog showcase • not affiliated with Gaetano's</span>
+    <span>Focus: clarity, speed, conversion</span>
+  </div>
+</div>
+<hr>
+<h2>Why this direction</h2>
+<ul>
+<li><strong>Action-first hierarchy:</strong> reservation/order/directions are visible immediately.</li>
+<li><strong>Cleaner information architecture:</strong> menu and event pathways are explicit.</li>
+<li><strong>Reduced cognitive load:</strong> one visual language, fewer competing components.</li>
+<li><strong>Mobile-friendly by default:</strong> layout collapses into single-column sections.</li>
+</ul>
+<p>If I iterate this further, next step would be a full menu page mockup plus a mobile-first reservation flow.</p>
+
+  </div>
+
+  <footer class="post-footer">
+    <a href="/smendoza787.github.io/" class="back-link">&larr; Back to all posts</a>
+  </footer>
+</article>
+
+
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; Sergio Mendoza · <a href="/smendoza787.github.io/feed.xml">RSS</a></p>
+  </footer>
+
+  <script>
+    // Theme toggle
+    const toggle = document.querySelector('.theme-toggle');
+    const html = document.documentElement;
+    
+    // Check for saved preference or system preference
+    const savedTheme = localStorage.getItem('theme');
+    const systemDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+    
+    if (savedTheme) {
+      html.setAttribute('data-theme', savedTheme);
+    } else if (systemDark) {
+      html.setAttribute('data-theme', 'dark');
+    }
+    
+    toggle.addEventListener('click', () => {
+      const current = html.getAttribute('data-theme');
+      const next = current === 'dark' ? 'light' : 'dark';
+      html.setAttribute('data-theme', next);
+      localStorage.setItem('theme', next);
+    });
+  </script>
+</body>
+</html>
+

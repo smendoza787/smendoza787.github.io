@@ -83,5 +83,276 @@ formatDate(&#39;2024-11-28&#39;); // &amp;quot;November 28, 2024&amp;quot;
       <dc:creator>Sergio Mendoza</dc:creator>
       <guid>https://smendoza787.github.io/smendoza787.github.io/posts/hello-world/</guid>
     </item>
+    <item>
+      <title>Redesign Concept — Gaetano&#39;s Italian (Denver 80211)</title>
+      <link>https://smendoza787.github.io/smendoza787.github.io/posts/gaetanos-redesign-concept/</link>
+      <description>&lt;p&gt;I picked &lt;strong&gt;Gaetano&#39;s Italian&lt;/strong&gt; in Highland (near ZIP &lt;strong&gt;80211&lt;/strong&gt;) as a redesign candidate.&lt;/p&gt;
+&lt;p&gt;Their current site has good content, but it feels heavy and scattered on first load (lots of visual/technical weight before the main user actions). I put together a cleaner concept focused on the three things diners usually need fast:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;Reserve a table&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Order online&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Find location + hours&lt;/strong&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3&gt;Source data used from current site&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Brand/name: &lt;strong&gt;Gaetano&#39;s Restaurant / Gaetano&#39;s Italian&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;Positioning: authentic Italian cuisine with pizza, pasta, catering, dine-in/takeout/delivery&lt;/li&gt;
+&lt;li&gt;Neighborhood/address context: &lt;strong&gt;3760 Tejon St, Denver&lt;/strong&gt; (from the site content/news section)&lt;/li&gt;
+&lt;li&gt;Social presence references: Facebook + Instagram links&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h2&gt;Homepage Mockup (HTML/CSS concept)&lt;/h2&gt;
+&lt;style&gt;
+  .mockup-shell {
+    --bg: #fffaf6;
+    --ink: #1c1a1a;
+    --muted: #5f5a58;
+    --brand: #b72a2a;
+    --brand-dark: #861d1d;
+    --card: #ffffff;
+    --line: #eadfda;
+    --accent: #f3d7c2;
+
+    margin: 2rem 0;
+    border: 1px solid var(--line);
+    border-radius: 16px;
+    overflow: hidden;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: Inter, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+  }
+
+  .mockup-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 1.25rem;
+    background: #fff;
+    border-bottom: 1px solid var(--line);
+    flex-wrap: wrap;
+    gap: 0.75rem;
+  }
+
+  .mockup-brand {
+    font-weight: 800;
+    letter-spacing: 0.02em;
+  }
+
+  .mockup-links {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    font-size: 0.92rem;
+  }
+
+  .mockup-links span { color: var(--muted); }
+
+  .mockup-cta {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    padding: 0.5rem 0.9rem;
+    border-radius: 999px;
+    border: 0;
+    font-weight: 700;
+    background: var(--brand);
+    color: #fff;
+  }
+
+  .mockup-hero {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    gap: 1rem;
+    padding: 1.5rem;
+  }
+
+  .mockup-hero-card,
+  .mockup-panel,
+  .mockup-mini {
+    background: var(--card);
+    border: 1px solid var(--line);
+    border-radius: 14px;
+  }
+
+  .mockup-hero-card {
+    padding: 1.2rem;
+    background: linear-gradient(165deg, #fff, #fff6f2);
+  }
+
+  .mockup-kicker {
+    display: inline-block;
+    background: #ffe9de;
+    color: #7e2c2c;
+    border: 1px solid #f4c7ae;
+    padding: 0.2rem 0.55rem;
+    border-radius: 999px;
+    font-size: 0.75rem;
+    font-weight: 700;
+    margin-bottom: 0.75rem;
+  }
+
+  .mockup-hero h3 {
+    margin: 0 0 0.45rem;
+    font-size: 1.4rem;
+    line-height: 1.25;
+  }
+
+  .mockup-hero p {
+    margin: 0;
+    color: var(--muted);
+    line-height: 1.5;
+  }
+
+  .mockup-actions {
+    display: flex;
+    gap: 0.6rem;
+    margin-top: 1rem;
+    flex-wrap: wrap;
+  }
+
+  .mockup-btn {
+    padding: 0.55rem 0.8rem;
+    border-radius: 10px;
+    border: 1px solid var(--line);
+    background: #fff;
+    font-weight: 600;
+    font-size: 0.9rem;
+  }
+
+  .mockup-btn.primary {
+    background: var(--brand);
+    border-color: var(--brand);
+    color: #fff;
+  }
+
+  .mockup-panel {
+    padding: 1rem;
+    display: grid;
+    gap: 0.7rem;
+    align-content: start;
+  }
+
+  .mockup-panel h4,
+  .mockup-mini h4 {
+    margin: 0;
+    font-size: 1rem;
+  }
+
+  .mockup-hours {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 0.35rem 0.75rem;
+    font-size: 0.9rem;
+  }
+
+  .mockup-hours b { font-weight: 700; }
+
+  .mockup-grid {
+    padding: 0 1.5rem 1.5rem;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 0.8rem;
+  }
+
+  .mockup-mini {
+    padding: 0.9rem;
+    background: #fff;
+  }
+
+  .mockup-mini p {
+    margin: 0.45rem 0 0;
+    color: var(--muted);
+    font-size: 0.9rem;
+  }
+
+  .mockup-footer {
+    border-top: 1px solid var(--line);
+    background: #fff;
+    padding: 0.95rem 1.25rem;
+    color: var(--muted);
+    font-size: 0.85rem;
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+
+  @media (max-width: 860px) {
+    .mockup-hero { grid-template-columns: 1fr; }
+    .mockup-grid { grid-template-columns: 1fr; }
+  }
+&lt;/style&gt;
+&lt;div class=&quot;mockup-shell&quot; role=&quot;img&quot; aria-label=&quot;Homepage redesign mockup for Gaetano&#39;s Italian&quot;&gt;
+  &lt;div class=&quot;mockup-nav&quot;&gt;
+    &lt;div class=&quot;mockup-brand&quot;&gt;GAETANO&#39;S ITALIAN&lt;/div&gt;
+    &lt;div class=&quot;mockup-links&quot;&gt;
+      &lt;span&gt;Menu&lt;/span&gt;
+      &lt;span&gt;Reservations&lt;/span&gt;
+      &lt;span&gt;Catering&lt;/span&gt;
+      &lt;span&gt;Private Dining&lt;/span&gt;
+      &lt;span&gt;Contact&lt;/span&gt;
+    &lt;/div&gt;
+    &lt;button class=&quot;mockup-cta&quot;&gt;Order Online&lt;/button&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;mockup-hero&quot;&gt;
+    &lt;section class=&quot;mockup-hero-card&quot;&gt;
+      &lt;span class=&quot;mockup-kicker&quot;&gt;Since Highland roots&lt;/span&gt;
+      &lt;h3&gt;Classic Italian, modern online experience.&lt;/h3&gt;
+      &lt;p&gt;
+        Pizza, pasta, and hospitality in the heart of Denver. This concept simplifies the journey
+        from &quot;I&#39;m hungry&quot; to &quot;table booked&quot; in under 30 seconds.
+      &lt;/p&gt;
+      &lt;div class=&quot;mockup-actions&quot;&gt;
+        &lt;button class=&quot;mockup-btn primary&quot;&gt;Reserve a Table&lt;/button&gt;
+        &lt;button class=&quot;mockup-btn&quot;&gt;View Dinner Menu&lt;/button&gt;
+        &lt;button class=&quot;mockup-btn&quot;&gt;Catering Inquiry&lt;/button&gt;
+      &lt;/div&gt;
+    &lt;/section&gt;
+&lt;p&gt;&lt;/p&gt;&lt;aside class=&quot;mockup-panel&quot;&gt;
+&lt;h4&gt;Visit Us&lt;/h4&gt;
+&lt;p style=&quot;margin:0;color:#5f5a58;font-size:0.92rem;&quot;&gt;3760 Tejon St, Denver, CO&lt;/p&gt;
+&lt;div class=&quot;mockup-hours&quot;&gt;
+&lt;b&gt;Mon–Thu&lt;/b&gt;&lt;span&gt;4:00 PM – 9:00 PM&lt;/span&gt;
+&lt;b&gt;Fri&lt;/b&gt;&lt;span&gt;4:00 PM – 10:00 PM&lt;/span&gt;
+&lt;b&gt;Sat&lt;/b&gt;&lt;span&gt;3:00 PM – 10:00 PM&lt;/span&gt;
+&lt;b&gt;Sun&lt;/b&gt;&lt;span&gt;3:00 PM – 9:00 PM&lt;/span&gt;
+&lt;/div&gt;
+&lt;button class=&quot;mockup-btn&quot;&gt;Get Directions&lt;/button&gt;
+&lt;/aside&gt;&lt;p&gt;&lt;/p&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;mockup-grid&quot;&gt;
+    &lt;section class=&quot;mockup-mini&quot;&gt;
+      &lt;h4&gt;Tonight&#39;s Focus&lt;/h4&gt;
+      &lt;p&gt;House-made pasta, wood-fired pizza, and rotating chef specials.&lt;/p&gt;
+    &lt;/section&gt;
+    &lt;section class=&quot;mockup-mini&quot;&gt;
+      &lt;h4&gt;For Events&lt;/h4&gt;
+      &lt;p&gt;Private dining and catering lead forms front-and-center with fast quote workflow.&lt;/p&gt;
+    &lt;/section&gt;
+    &lt;section class=&quot;mockup-mini&quot;&gt;
+      &lt;h4&gt;Social Proof&lt;/h4&gt;
+      &lt;p&gt;Pull latest Instagram/Facebook content into a clean, lightweight feed strip.&lt;/p&gt;
+    &lt;/section&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;mockup-footer&quot;&gt;
+    &lt;span&gt;Concept redesign for blog showcase • not affiliated with Gaetano&#39;s&lt;/span&gt;
+    &lt;span&gt;Focus: clarity, speed, conversion&lt;/span&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;hr&gt;
+&lt;h2&gt;Why this direction&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Action-first hierarchy:&lt;/strong&gt; reservation/order/directions are visible immediately.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Cleaner information architecture:&lt;/strong&gt; menu and event pathways are explicit.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Reduced cognitive load:&lt;/strong&gt; one visual language, fewer competing components.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Mobile-friendly by default:&lt;/strong&gt; layout collapses into single-column sections.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;If I iterate this further, next step would be a full menu page mockup plus a mobile-first reservation flow.&lt;/p&gt;
+</description>
+      <pubDate>Sun, 01 Mar 2026 24:00:00 GMT</pubDate>
+      <dc:creator>Sergio Mendoza</dc:creator>
+      <guid>https://smendoza787.github.io/smendoza787.github.io/posts/gaetanos-redesign-concept/</guid>
+    </item>
   </channel>
 </rss>
